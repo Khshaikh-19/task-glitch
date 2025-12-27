@@ -21,7 +21,6 @@ export default function ChartsDashboard({ tasks }: Props) {
       .reduce((sum, t) => sum + t.revenue, 0),
   }));
 
-  // ✅ FIX BUG 5: Safe ROI bucketing
   const roiBuckets = [
     {
       label: '<200',
